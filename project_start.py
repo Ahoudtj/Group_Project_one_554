@@ -48,7 +48,15 @@ plt.show()
 price_train.hist(column = 'quantity')
 
 
-
+# the data
+import numpy as np
+X1 = np.array(price_train['sku'])
+X2 = np.array(price_train['price'])
+X3 = np.array(price_train['order'])
+X4 = np.array(price_train['duration'])
+X5 = np.array(price_train['category'])
+X = np.array(np.column_stack((X1, X2, X3, X4, X5))) 
+y = np.array(price_train['quantity'])
 
 
 
