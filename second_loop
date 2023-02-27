@@ -1,0 +1,26 @@
+chunks = pd.read_csv('pricing_test.csv', header = None ,chunksize=1)
+
+# initialize an empty list to store the results
+results = []
+
+# loop through each chunk of data
+for chunk in chunks:
+    # standardize the numerical columns (excluding category)
+    for col in chunk.columns:
+        if col not in ['category', 'sku']:
+            chunk[col] = (chunk[col] - chunk[col].mean()) / chunk[col].std()
+
+    # create dummy columns for the category column
+    dummy_columns = pd.get_dummies(chunk['category'], prefix='category')
+
+    # concatenate the dummy columns with the original dataframe
+    chunk = pd.concat([chunk.drop('category', axis=1), dummy_columns], axis=1)
+
+    # add the chunk to the results list
+    results.append(chunk)
+
+# concatenate all of the chunks into a single dataframe
+pricing_test = pd.concat(results)
+
+# print the normalized dataframe
+print(pricing_test)
