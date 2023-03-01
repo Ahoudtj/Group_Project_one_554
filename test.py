@@ -3,15 +3,17 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 import numpy as np
 
-csv.reader
+# csv.reader
 
 gen = pd.read_csv('pricing_test copy.csv', sep = ',',chunksize=1)
 
+gen
 
 for val in gen:
     minval_1 = val['price']
     minval_2 = val["duration"]
     minval_3 = val["order"]
+    print( minval_1)
 
 
 minvalue_1=999999999999999.999999999999 #price
@@ -63,7 +65,7 @@ category = []
 cat = np.zeros((33,), dtype=int)
 
 import csv
-  
+import pickle  
 # Open file 
 with open('pricing_test copy.csv') as file_obj:
       
@@ -109,8 +111,26 @@ with open('pricing_test copy.csv') as file_obj:
 # category[1]
 
 # row[5] == category[25]
+len(cat)
+
+df=open('Result file','w')
+# Open file 
+with open('pricing_test copy.csv') as file_obj:
+      
+    # Create reader object by passing the file 
+    # object to reader method
+    reader_obj = csv.reader(file_obj)
+    next(reader_obj,None)
+    # Iterate over each row in the csv 
+    # file using reader object
+
     i = 0
     for row in reader_obj:
+        row[1] = float(row[1])
+        row[2] = float(row[2])
+        row[3] = float(row[3])
+        row[4] = float(row[4])
+        row[5] = int(row[5])
         norm_1 = (row[1]/(maxvalue_1-minvalue_1)) #price
         norm_2 = (row[2]/(maxvalue_2-minvalue_2)) #quantity
         norm_3 = (row[3]/(maxvalue_3-minvalue_3)) #order
@@ -119,15 +139,46 @@ with open('pricing_test copy.csv') as file_obj:
         index = row[5]
         cat[index]=1
 #        X =np.array(np.column_stack((norm_1,norm_3,norm_4,cat)))
-#        X = np.append(cat,[norm_1,norm_3,norm_4])
+        X1 = np.append(cat,[norm_1,norm_3,norm_4])
+        X = X1.reshape(1,-1)
         y = np.array(norm_2)
+        y = y.reshape(1,-1)
         result = model.fit(x=X, y=y, batch_size = 1, epochs = 1)
-        a = result.history
-        a = pd.DataFrame(a)
-        a.append(a, ignore_index=True)
+        a = pd.DataFrame(result.history)
+        df.write(str(a))
+        df.write("\n")
         i = i+1
-    
+        with open("model.pkl", "wb") as f:
+            pickle.dump(model, f)
 
+
+df.close()
+
+X = [[0.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.        ,
+        1.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.14444365, 4.61834412,
+        0.15198618],[0.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.        ,
+        1.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.2837647642, 4.12308449817,
+        0.984671648791],[0.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.        , 0.        ,
+        1.        , 0.        , 0.        , 0.        , 0.        ,
+        0.        , 0.        , 0.        , 0.3924861764, 4.293846257829,
+        0.239847298742]]
+
+with open("model.pkl", "rb") as f:
+    model = pickle.load(f)
 
 yhat = model.predict(x=X)  
 #this is the line that we fit our test data to know the prediction. 
