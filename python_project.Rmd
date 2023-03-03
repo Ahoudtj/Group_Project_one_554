@@ -1,0 +1,76 @@
+---
+title: "python_project"
+author: "python_project"
+date: "2023-03-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r}
+
+pricing2<- read.csv('pricing2.csv', header = FALSE)
+
+
+pricing2_p1 <- pricing2[1:131071,]
+head(pricing2_p1)
+tail(pricing2_p1)
+nrow(pricing2_p1)
+
+write.csv(pricing2_p1, '/Users/ahoudtg/Library/CloudStorage/OneDrive-Personal/Documents/Spring 2023 MSBA/BZAN554 DEEP/group_project_1/pricing2_p1.csv')
+
+pricing2_p2 <- pricing2[131072:262142,]
+head(pricing2_p2)
+tail(pricing2_p2)
+nrow(pricing2_p2)
+
+write.csv(pricing2_p2, '/Users/ahoudtg/Library/CloudStorage/OneDrive-Personal/Documents/Spring 2023 MSBA/BZAN554 DEEP/group_project_1/pricing2_p2.csv')
+
+pricing2_p3 <- pricing2[262143:393213,]
+head(pricing2_p3)
+tail(pricing2_p3)
+nrow(pricing2_p3)
+
+write.csv(pricing2_p3, '/Users/ahoudtg/Library/CloudStorage/OneDrive-Personal/Documents/Spring 2023 MSBA/BZAN554 DEEP/group_project_1/pricing2_p3.csv')
+
+pricing2_p4 <- pricing2[393214:524284,]
+head(pricing2_p4)
+tail(pricing2_p4)
+nrow(pricing2_p4)
+
+write.csv(pricing2_p4, '/Users/ahoudtg/Library/CloudStorage/OneDrive-Personal/Documents/Spring 2023 MSBA/BZAN554 DEEP/group_project_1/pricing2_p4.csv')
+
+pricing2_p5 <- pricing2[524285:655355,]
+head(pricing2_p5)
+tail(pricing2_p5)
+nrow(pricing2_p5)
+
+write.csv(pricing2_p5, '/Users/ahoudtg/Library/CloudStorage/OneDrive-Personal/Documents/Spring 2023 MSBA/BZAN554 DEEP/group_project_1/pricing2_p5.csv')
+
+pricing2_p6 <- pricing2[655356:786426,]
+head(pricing2_p6)
+tail(pricing2_p6)
+nrow(pricing2_p6)
+
+write.csv(pricing2_p6, '/Users/ahoudtg/Library/CloudStorage/OneDrive-Personal/Documents/Spring 2023 MSBA/BZAN554 DEEP/group_project_1/pricing2_p6.csv')
+
+pricing2_p7 <- pricing2[786427:917497,]
+head(pricing2_p7)
+tail(pricing2_p7)
+nrow(pricing2_p7)
+
+write.csv(pricing2_p7, '/Users/ahoudtg/Library/CloudStorage/OneDrive-Personal/Documents/Spring 2023 MSBA/BZAN554 DEEP/group_project_1/pricing2_p7.csv')
+
+pricing2_p8 <- pricing2[917498:1048575,]
+head(pricing2_p8)
+tail(pricing2_p8)
+nrow(pricing2_p8)
+
+write.csv(pricing2_p8, '/Users/ahoudtg/Library/CloudStorage/OneDrive-Personal/Documents/Spring 2023 MSBA/BZAN554 DEEP/group_project_1/pricing2_p8.csv')
+
+```
+
