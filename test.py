@@ -67,7 +67,7 @@ cat = np.zeros((33,), dtype=int)
 import csv
 import pickle  
 # Open file 
-with open('pricing_test copy.csv') as file_obj:
+with open('pricing1.csv') as file_obj:
       
     # Create reader object by passing the file 
     # object to reader method
@@ -116,14 +116,15 @@ with open('pricing_test copy.csv') as file_obj:
 
 
 
+
 csvfile = open("Result.csv",'w',newline='')
 df = csv.writer(csvfile)
 
 
-
+models = [] # change this line before the training the model ex models_x  x = 1,2,3,4
 
 # Open file 
-with open('/Users/emmachang/Desktop/Class/BZAN554_DP/pricing2_p1.csv') as file_obj:
+with open('/Users/emmachang/Desktop/Class/BZAN554_DP/pricing_test copy.csv') as file_obj:
       
     # Create reader object by passing the file 
     # object to reader method
@@ -156,15 +157,22 @@ with open('/Users/emmachang/Desktop/Class/BZAN554_DP/pricing2_p1.csv') as file_o
         a = pd.DataFrame(result.history)
         df.writerow(a.iloc[0])
         i = i+1
-        with open("model.pkl", "wb") as f:
-            pickle.dump(model, f)
+        models.append(model) # this line should be change as the object above
+
+with open("model.pkl", "wb") as f: #this line should be change as the object above model_x x = 1,2,3
+    pickle.dump(models, f)   #this line should be change as the object above models_x x =1,2,3
 
 
 csvfile.close()
 
-# This line means load the training model first
+# This line means load the training model first, Run this Chunk before making predictation
 with open("model.pkl", "rb") as f:
     model = pickle.load(f)
+
+
+#
+
+
 
 yhat = model.predict(x=X)  
 #this is the line that we fit our test data to know the prediction. 
