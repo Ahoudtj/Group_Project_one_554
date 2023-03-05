@@ -1,0 +1,426 @@
+Processed 0 records[0.9932498931884766]Memory usage: 1081344 bytes
+
+Processed 5000 records[1.159560815722216e-05]Memory usage: 262144 bytes
+
+Processed 10000 records[6.320158718153834e-05]Memory usage: 49152 bytes
+
+Processed 15000 records[1.568813701169347e-07]Memory usage: 212992 bytes
+
+Processed 20000 records[4.2845431380555965e-06]Memory usage: 212992 bytes
+
+Processed 25000 records[5.2709929150296375e-05]Memory usage: 0 bytes
+
+Processed 30000 records[0.000447195052402094]Memory usage: 458752 bytes
+
+Processed 35000 records[1.870632331701927e-05]Memory usage: 376832 bytes
+
+Processed 40000 records[1.0723383638833184e-05]Memory usage: 0 bytes
+
+Processed 45000 records[3.3842650282167597e-07]Memory usage: 294912 bytes
+
+Processed 50000 records[3.640000613813754e-06]Memory usage: 524288 bytes
+
+Processed 55000 records[1.220428202941548e-06]Memory usage: 606208 bytes
+
+Processed 60000 records[6.398362017989712e-08]Memory usage: 753664 bytes
+
+Processed 65000 records[5.059359682491049e-05]Memory usage: 458752 bytes
+
+Processed 70000 records[1.1957775313931052e-05]Memory usage: 278528 bytes
+
+Processed 75000 records[1.0003453098761383e-05]Memory usage: 933888 bytes
+
+Processed 80000 records[2.241215952381026e-05]Memory usage: 409600 bytes
+
+Processed 85000 records[1.500891630712431e-05]Memory usage: 819200 bytes
+
+Processed 90000 records[1.6380989109165967e-05]Memory usage: 294912 bytes
+
+Processed 95000 records[0.00010117815691046417]Memory usage: 491520 bytes
+
+Processed 100000 records[1.4800700228079222e-05]Memory usage: 557056 bytes
+
+Processed 105000 records[9.910573908200604e-07]Memory usage: 786432 bytes
+
+Processed 110000 records[2.324170054635033e-06]Memory usage: 393216 bytes
+
+Processed 115000 records[8.861418336891802e-07]Memory usage: 1081344 bytes
+
+Processed 120000 records[2.9997916499269195e-05]Memory usage: 655360 bytes
+
+Processed 125000 records[6.46721528028138e-05]Memory usage: 835584 bytes
+
+Processed 130000 records[5.844838142365916e-06]Memory usage: 688128 bytes
+
+Processed 135000 records[4.677622200688347e-06]Memory usage: 868352 bytes
+
+Processed 140000 records[1.2750576843245653e-06]Memory usage: 704512 bytes
+
+Processed 145000 records[0.00038364293868653476]Memory usage: 442368 bytes
+
+Processed 150000 records[1.0789466614369303e-05]Memory usage: 409600 bytes
+
+Processed 155000 records[3.737042425200343e-05]Memory usage: 540672 bytes
+
+Processed 160000 records[2.2983165763434954e-05]Memory usage: 524288 bytes
+
+Processed 165000 records[1.5464953321497887e-05]Memory usage: 262144 bytes
+
+Processed 170000 records[7.732647855362984e-11]Memory usage: 344064 bytes
+
+Processed 175000 records[0.00012128742673667148]Memory usage: 638976 bytes
+
+Processed 180000 records[0.00011171050573466346]Memory usage: 491520 bytes
+
+Processed 185000 records[1.1836951898658299e-06]Memory usage: 458752 bytes
+
+Processed 190000 records[1.1592671398830134e-05]Memory usage: 770048 bytes
+
+Processed 195000 records[2.233147642982658e-05]Memory usage: 802816 bytes
+
+Processed 200000 records[3.1374875106848776e-05]Memory usage: 704512 bytes
+
+Processed 205000 records[5.3690037020714954e-05]Memory usage: 311296 bytes
+
+Processed 210000 records[1.3588433830591384e-05]Memory usage: 638976 bytes
+
+Processed 215000 records[1.2899422472401056e-05]Memory usage: 819200 bytes
+
+Processed 220000 records[3.3080591492762323e-06]Memory usage: 393216 bytes
+
+Processed 225000 records[0.0002527266915421933]Memory usage: 770048 bytes
+
+Processed 230000 records[4.979310233466094e-06]Memory usage: -7585792 bytes
+
+Processed 235000 records[0.0002796509361360222]Memory usage: 458752 bytes
+
+Processed 240000 records[2.9155766242183745e-05]Memory usage: 557056 bytes
+
+Processed 245000 records[2.7107284950034227e-07]Memory usage: 589824 bytes
+
+Processed 250000 records[3.6515655665425584e-05]Memory usage: 540672 bytes
+
+Processed 255000 records[1.5072340829647146e-05]Memory usage: 917504 bytes
+
+Processed 260000 records[4.360515231383033e-05]Memory usage: 851968 bytes
+
+Processed 265000 records[6.94260825184756e-06]Memory usage: 835584 bytes
+
+Processed 270000 records[1.2480247733037686e-06]Memory usage: 802816 bytes
+
+Processed 275000 records[5.466571337819914e-07]Memory usage: 655360 bytes
+
+Processed 280000 records[4.087150955456309e-06]Memory usage: 573440 bytes
+
+Processed 285000 records[4.0484814235242084e-05]Memory usage: 671744 bytes
+
+Processed 290000 records[1.3111682164890226e-05]Memory usage: 442368 bytes
+
+Processed 295000 records[4.736994014820084e-06]Memory usage: -34226176 bytes
+
+Processed 300000 records[0.00018890804494731128]Memory usage: 573440 bytes
+
+Processed 305000 records[1.1946147424168885e-05]Memory usage: 393216 bytes
+
+Processed 310000 records[0.0005672756233252585]Memory usage: 557056 bytes
+
+Processed 315000 records[2.8536765967146493e-05]Memory usage: 933888 bytes
+
+Processed 320000 records[6.761090844520368e-06]Memory usage: 507904 bytes
+
+Processed 325000 records[0.00023746587976347655]Memory usage: 589824 bytes
+
+Processed 330000 records[0.0030740529764443636]Memory usage: 835584 bytes
+
+Processed 335000 records[0.00035307591315358877]Memory usage: 884736 bytes
+
+Processed 340000 records[7.724078022874892e-05]Memory usage: 720896 bytes
+
+Processed 345000 records[5.2926319767721e-05]Memory usage: -51019776 bytes
+
+Processed 350000 records[5.465262347570388e-06]Memory usage: 393216 bytes
+
+Processed 355000 records[5.909355422772933e-07]Memory usage: 491520 bytes
+
+Processed 360000 records[1.0663934517651796e-05]Memory usage: 262144 bytes
+
+Processed 365000 records[1.366809527780788e-07]Memory usage: 245760 bytes
+
+Processed 370000 records[8.424594852840528e-06]Memory usage: 638976 bytes
+
+Processed 375000 records[7.476619430235587e-06]Memory usage: 360448 bytes
+
+Processed 380000 records[4.625864676199853e-06]Memory usage: 1081344 bytes
+
+Processed 385000 records[5.3664454753743485e-05]Memory usage: 704512 bytes
+
+Processed 390000 records[1.1536261808942072e-05]Memory usage: 901120 bytes
+
+Processed 395000 records[4.493149845075095e-06]Memory usage: 622592 bytes
+
+Processed 400000 records[9.525258064968511e-05]Memory usage: 966656 bytes
+
+Processed 405000 records[5.80530922889011e-06]Memory usage: 655360 bytes
+
+Processed 410000 records[0.00012516176502685994]Memory usage: 786432 bytes
+
+Processed 415000 records[5.823129711757247e-08]Memory usage: -27394048 bytes
+
+Processed 420000 records[4.704108869191259e-05]Memory usage: 933888 bytes
+
+Processed 425000 records[3.957475200877525e-06]Memory usage: 884736 bytes
+
+Processed 430000 records[0.002446030033752322]Memory usage: 376832 bytes
+
+Processed 435000 records[9.47978605836397e-06]Memory usage: 819200 bytes
+
+Processed 440000 records[9.469017641094979e-07]Memory usage: 819200 bytes
+
+Processed 445000 records[2.628193271903001e-07]Memory usage: 671744 bytes
+
+Processed 0 records[1.5451420040335506e-05]Memory usage: 1884160 bytes
+
+Processed 445000 records[1.3751089227298507e-06]Memory usage: 1409024 bytes
+
+Processed 450000 records[0.00016636899090372026]Memory usage: 163840 bytes
+
+Processed 455000 records[3.585649392334744e-05]Memory usage: 884736 bytes
+
+Processed 460000 records[2.141371078323573e-05]Memory usage: 589824 bytes
+
+Processed 465000 records[0.00011517696111695841]Memory usage: 294912 bytes
+
+Processed 470000 records[3.524480689520715e-06]Memory usage: 589824 bytes
+
+Processed 475000 records[1.2452213695723913e-06]Memory usage: 278528 bytes
+
+Processed 480000 records[1.0152265303986496e-06]Memory usage: 507904 bytes
+
+Processed 485000 records[9.53415792537271e-07]Memory usage: 245760 bytes
+
+Processed 490000 records[8.47748015075922e-05]Memory usage: 786432 bytes
+
+Processed 495000 records[4.0074726825878315e-07]Memory usage: 573440 bytes
+
+Processed 500000 records[5.7525085139786825e-06]Memory usage: 786432 bytes
+
+Processed 505000 records[3.06881725009589e-06]Memory usage: 245760 bytes
+
+Processed 510000 records[8.168759450200014e-06]Memory usage: 606208 bytes
+
+Processed 515000 records[4.1649862396297976e-05]Memory usage: 671744 bytes
+
+Processed 520000 records[1.3996487723488826e-05]Memory usage: 638976 bytes
+
+Processed 525000 records[6.612947618123144e-05]Memory usage: 966656 bytes
+
+Processed 530000 records[9.340126780443825e-06]Memory usage: 1081344 bytes
+
+Processed 535000 records[9.88422743830597e-06]Memory usage: 819200 bytes
+
+Processed 540000 records[4.367831934359856e-05]Memory usage: 720896 bytes
+
+Processed 545000 records[3.902722892235033e-05]Memory usage: 786432 bytes
+
+Processed 550000 records[3.791683411691338e-05]Memory usage: 573440 bytes
+
+Processed 555000 records[6.2568619796365965e-06]Memory usage: 1146880 bytes
+
+Processed 560000 records[1.3481511814461555e-05]Memory usage: 688128 bytes
+
+Processed 565000 records[8.675820595271944e-07]Memory usage: 737280 bytes
+
+Processed 570000 records[9.950886123988312e-06]Memory usage: 868352 bytes
+
+Processed 575000 records[5.857031624145748e-07]Memory usage: 589824 bytes
+
+Processed 580000 records[1.1644922778941691e-05]Memory usage: 999424 bytes
+
+Processed 585000 records[0.00010853906132979318]Memory usage: 1163264 bytes
+
+Processed 590000 records[4.603167326422408e-05]Memory usage: 475136 bytes
+
+Processed 595000 records[4.457441718841437e-06]Memory usage: 606208 bytes
+
+Processed 600000 records[1.0219075193163007e-05]Memory usage: 622592 bytes
+
+Processed 605000 records[1.3467809367284644e-05]Memory usage: 475136 bytes
+
+Processed 610000 records[6.868482955724176e-07]Memory usage: 950272 bytes
+
+Processed 615000 records[1.2129908100178e-07]Memory usage: 671744 bytes
+
+Processed 620000 records[9.120447066379711e-05]Memory usage: 491520 bytes
+
+Processed 625000 records[2.942991159216035e-06]Memory usage: 671744 bytes
+
+Processed 630000 records[1.0230060979665723e-05]Memory usage: 737280 bytes
+
+Processed 635000 records[1.5313989933929406e-05]Memory usage: 573440 bytes
+
+Processed 640000 records[7.756849663564935e-05]Memory usage: 671744 bytes
+
+Processed 645000 records[1.4879996342642698e-05]Memory usage: 245760 bytes
+
+Processed 650000 records[7.41241251489555e-07]Memory usage: 901120 bytes
+
+Processed 655000 records[1.792744660633616e-05]Memory usage: 540672 bytes
+
+Processed 660000 records[2.4787064830888994e-05]Memory usage: 458752 bytes
+
+Processed 665000 records[4.0097758756019175e-05]Memory usage: 671744 bytes
+
+Processed 670000 records[0.0001821599726099521]Memory usage: 688128 bytes
+
+Processed 675000 records[7.483083663828438e-08]Memory usage: 786432 bytes
+
+Processed 680000 records[2.7637829589366447e-06]Memory usage: 966656 bytes
+
+Processed 685000 records[0.0001650493941269815]Memory usage: 851968 bytes
+
+Processed 690000 records[1.1655391972453799e-05]Memory usage: 589824 bytes
+
+Processed 695000 records[5.870505219718325e-07]Memory usage: 655360 bytes
+
+Processed 700000 records[6.759601092198864e-05]Memory usage: 606208 bytes
+
+Processed 705000 records[3.0323210012284108e-05]Memory usage: 606208 bytes
+
+Processed 710000 records[6.279685749177588e-06]Memory usage: 851968 bytes
+
+Processed 715000 records[8.021394933166448e-06]Memory usage: 442368 bytes
+
+Processed 720000 records[1.2039837429256295e-06]Memory usage: 851968 bytes
+
+Processed 725000 records[3.0048884269717746e-08]Memory usage: 557056 bytes
+
+Processed 730000 records[5.97792040935019e-06]Memory usage: 376832 bytes
+
+Processed 735000 records[0.0004115996998734772]Memory usage: 770048 bytes
+
+Processed 740000 records[7.233565702335909e-05]Memory usage: 868352 bytes
+
+Processed 740000 records[6.507460784632713e-05]Memory usage: 1179648 bytes
+
+Processed 745000 records[1.5372417692560703e-05]Memory usage: 229376 bytes
+
+Processed 750000 records[1.861765849753283e-05]Memory usage: 98304 bytes
+
+Processed 755000 records[8.786025205154147e-07]Memory usage: 0 bytes
+
+Processed 760000 records[1.3891835806134623e-05]Memory usage: 0 bytes
+
+Processed 765000 records[0.00013527112605515867]Memory usage: 81920 bytes
+
+Processed 770000 records[6.831425707787275e-05]Memory usage: 131072 bytes
+
+Processed 775000 records[6.57123428027262e-06]Memory usage: 212992 bytes
+
+Processed 780000 records[1.9455252186162397e-05]Memory usage: 376832 bytes
+
+Processed 785000 records[1.4253062545321882e-05]Memory usage: 507904 bytes
+
+Processed 790000 records[3.269009539508261e-05]Memory usage: 589824 bytes
+
+Processed 795000 records[7.306319457711652e-05]Memory usage: 180224 bytes
+
+Processed 800000 records[1.929292375280056e-05]Memory usage: 524288 bytes
+
+Processed 805000 records[7.727717456873506e-05]Memory usage: 573440 bytes
+
+Processed 810000 records[3.314139030408114e-05]Memory usage: 720896 bytes
+
+Processed 815000 records[0.00010568667494226247]Memory usage: 704512 bytes
+
+Processed 820000 records[0.00011874292977154255]Memory usage: 770048 bytes
+
+Processed 825000 records[1.3228976058599073e-05]Memory usage: 491520 bytes
+
+Processed 830000 records[0.00038349651731550694]Memory usage: 229376 bytes
+
+Processed 835000 records[4.317742423154414e-06]Memory usage: 671744 bytes
+
+Processed 840000 records[2.1214289063209435e-06]Memory usage: 507904 bytes
+
+Processed 845000 records[9.270530426874757e-05]Memory usage: 786432 bytes
+
+Processed 850000 records[2.599604613351403e-06]Memory usage: 671744 bytes
+
+Processed 855000 records[4.625836936611449e-06]Memory usage: 868352 bytes
+
+Processed 860000 records[2.7995706659567077e-06]Memory usage: 409600 bytes
+
+Processed 865000 records[4.6242985263234004e-05]Memory usage: 1114112 bytes
+
+Processed 870000 records[3.964030111092143e-05]Memory usage: 655360 bytes
+
+Processed 875000 records[1.2324089766480029e-05]Memory usage: 868352 bytes
+
+Processed 880000 records[1.4717990779899992e-05]Memory usage: 442368 bytes
+
+Processed 885000 records[2.86681711259007e-07]Memory usage: 851968 bytes
+
+Processed 890000 records[4.729854197194072e-07]Memory usage: 425984 bytes
+
+Processed 895000 records[0.00010922182991635054]Memory usage: 770048 bytes
+
+Processed 900000 records[4.4666699977824464e-05]Memory usage: 98304 bytes
+
+Processed 905000 records[4.949454523739405e-05]Memory usage: 786432 bytes
+
+Processed 910000 records[0.0009845092426985502]Memory usage: 196608 bytes
+
+Processed 915000 records[0.00012561821495182812]Memory usage: 360448 bytes
+
+Processed 920000 records[1.10409837361658e-05]Memory usage: 409600 bytes
+
+Processed 925000 records[4.761511718243128e-06]Memory usage: 606208 bytes
+
+Processed 930000 records[2.8377617127262056e-05]Memory usage: 425984 bytes
+
+Processed 935000 records[1.9050736227654852e-05]Memory usage: 802816 bytes
+
+Processed 940000 records[4.756229299296422e-10]Memory usage: 835584 bytes
+
+Processed 945000 records[2.584825961093884e-05]Memory usage: 622592 bytes
+
+Processed 950000 records[2.314502307854127e-05]Memory usage: 1146880 bytes
+
+Processed 955000 records[8.398802719966625e-07]Memory usage: 884736 bytes
+
+Processed 960000 records[3.310544229861989e-07]Memory usage: 884736 bytes
+
+Processed 965000 records[0.002316288650035858]Memory usage: -21069824 bytes
+
+Processed 970000 records[4.9846002880826745e-09]Memory usage: 819200 bytes
+
+Processed 975000 records[3.148973064526217e-07]Memory usage: 1261568 bytes
+
+Processed 980000 records[2.9277964131324552e-05]Memory usage: 475136 bytes
+
+Processed 985000 records[2.6477187020645943e-06]Memory usage: 393216 bytes
+
+Processed 990000 records[2.192774263676256e-05]Memory usage: 802816 bytes
+
+Processed 995000 records[9.741009853314608e-05]Memory usage: 655360 bytes
+
+Processed 1000000 records[6.0397316701710224e-05]Memory usage: 557056 bytes
+
+Processed 1005000 records[1.0540180483076256e-05]Memory usage: 901120 bytes
+
+Processed 1010000 records[2.4976007040322656e-08]Memory usage: 933888 bytes
+
+Processed 1015000 records[5.818785211886279e-06]Memory usage: 688128 bytes
+
+Processed 1020000 records[8.295319275930524e-06]Memory usage: 589824 bytes
+
+Processed 1025000 records[6.7361902438278776e-06]Memory usage: 262144 bytes
+
+Processed 1030000 records[1.1101431482529733e-05]Memory usage: 655360 bytes
+
+Processed 1035000 records[4.16297174510305e-09]Memory usage: 638976 bytes
+
+Processed 1040000 records[8.929991679451632e-08]Memory usage: 933888 bytes
+
+Processed 1045000 records[7.193285910034319e-06]Memory usage: 1212416 bytes
+
