@@ -18,7 +18,7 @@ maxvalue_4=0 #duration
 category = []
 cat = np.zeros((33,), dtype=int)
 
-import csv
+
 #import pickle  
 # Open file 
 with open('pricing1.csv') as file_obj:
@@ -26,7 +26,7 @@ with open('pricing1.csv') as file_obj:
     # Create reader object by passing the file 
     # object to reader method
     reader_obj = csv.reader(file_obj)
-    next(reader_obj,None)
+    #next(reader_obj,None)
     # Iterate over each row in the csv 
     # file using reader object
     for row in reader_obj:
@@ -68,11 +68,12 @@ with open('pricing1.csv') as file_obj:
 # row[5] == category[25]
 
 #timing and RAM
-training_times = []# initialize a list to store the training time for each iteration
-start_time = time.time() # get the start time
-initial_memory = psutil.Process().memory_info().rss # get the initial memory usage
+#training_times = []# initialize a list to store the training time for each iteration
 
+#initial_memory = psutil.Process().memory_info().rss # get the initial memory usage
 
+#load the model memory
+model = tf.keras.models.load_model('my_model.h5')
 
 checkpoint_path = "training_1/cp.ckpt"
 checkpoint_dir = os.path.dirname(checkpoint_path)
@@ -90,7 +91,7 @@ os.listdir(checkpoint_dir)
 
 
 #models = [] 
-
+start_time = time.time() # get the start time
 # Open file 
 with open('/Users/emmachang/Desktop/Class/BZAN554_DP/pricing1.csv') as file_obj:
       
@@ -100,15 +101,15 @@ with open('/Users/emmachang/Desktop/Class/BZAN554_DP/pricing1.csv') as file_obj:
     #next(reader_obj,None)
     # Iterate over each row in the csv 
     # file using reader object
-    # for row in range(1,170996):#range(line start to skip, line end to skip+1)
-    #      next(reader_obj)
-    i = 0
+    for row in range(1,460001):#range(line start to skip, line end to skip+1)
+         next(reader_obj)
+    i = 460001
     for row in reader_obj:
-        row[1] = float(row[1])
-        row[2] = float(row[2])
-        row[3] = float(row[3])
-        row[4] = float(row[4])
-        row[5] = int(row[5])
+        row[1] = float(row[1]) #price
+        row[2] = float(row[2]) #quantities
+        row[3] = float(row[3]) #order
+        row[4] = float(row[4]) #duration
+        row[5] = int(row[5]) #category
         norm_1 = ((row[1]-minvalue_1)/(maxvalue_1-minvalue_1)) #price
         norm_2 = ((row[2]-minvalue_2)/(maxvalue_2-minvalue_2)) #quantity
         norm_3 = ((row[3]-minvalue_3)/(maxvalue_3-minvalue_3)) #order
@@ -121,24 +122,19 @@ with open('/Users/emmachang/Desktop/Class/BZAN554_DP/pricing1.csv') as file_obj:
         y = np.array(norm_2)
         y = y.reshape(1,-1)
         model.fit(x=X, y=y, batch_size = 1, epochs = 1, callbacks = [cp_callback]) #Pass callback to training 
-        if i % 5000 ==0: 
+        if i % 5000 ==0:
+            initial_memory = psutil.Process().memory_info().rss  
             result = model.fit(x=X, y=y, batch_size = 1, epochs = 1, callbacks = [cp_callback]) #Pass callback to training 
             # a = pd.DataFrame(result.history)
             # df.writerow(a.iloc[0])
             with open("Result.txt",'a') as f:
                 f.write(f"Processed {i} records")
                 f.write(str(result.history['loss']))
+                f.write(f"Memory usage: {psutil.Process().memory_info().rss - initial_memory} bytes")
                 f.write('\n')
             model.save("my_model.h5")
         i = i+1
 
-        current_memory = psutil.Process().memory_info().rss
-        memory_usage = current_memory - initial_memory
-        iteration_time = time.time() - start_time
-        training_times.append(iteration_time)
-        category = np.sort(category) #mabye only 30
-        total_time = time.time() - start_time
-        average_time = sum(training_times) / len(training_times)
 
 
 
@@ -150,21 +146,17 @@ with open('/Users/emmachang/Desktop/Class/BZAN554_DP/pricing1.csv') as file_obj:
 
 f.close()
 
+total_time = time.time() - start_time
+print(total_time)
 # This line means load the training model first, Run this Chunk before making predictation
 #with open("model.pkl", "rb") as f:
 #    model = pickle.load(f)
 
 
-#Print time and RAM 
-print(f"Memory usage: {memory_usage} bytes")
-print(f"Total training time: {total_time:.2f} seconds")
-print(f"Average training time per iteration: {average_time:.2f} seconds")
-
-
-
-
+ytrue = np.array([])
+yhat = np.array([])
 #test data
-with open('/Users/emmachang/Desktop/Class/BZAN554_DP/testing.csv') as file_obj:
+with open('/Users/emmachang/Desktop/Class/BZAN554_DP/pricing_test copy.csv') as file_obj:
       
     # Create reader object by passing the file 
     # object to reader method
@@ -176,24 +168,38 @@ with open('/Users/emmachang/Desktop/Class/BZAN554_DP/testing.csv') as file_obj:
     #     next(reader_obj)
     i = 0
     for row in reader_obj:
-        row[1] = float(row[1])
-        row[2] = float(row[2])
-        row[3] = float(row[3])
-        row[4] = float(row[4])
-        row[5] = int(row[5])
+        row[1] = float(row[1]) #price
+        row[2] = float(row[2]) #quantities
+        row[3] = float(row[3]) #order
+        row[4] = float(row[4]) #duration
+        row[5] = int(row[5]) #category
+        norm_1 = ((row[1]-minvalue_1)/(maxvalue_1-minvalue_1)) #price
+        norm_2 = ((row[2]-minvalue_2)/(maxvalue_2-minvalue_2)) #quantity        
+        norm_3 = ((row[3]-minvalue_3)/(maxvalue_3-minvalue_3)) #order
+        norm_4 = ((row[4]-minvalue_4)/(maxvalue_4-minvalue_4)) #duration
         cat = np.zeros((33,), dtype=int)
         index = row[5]
         cat[index]=1
-#        X =np.array(np.column_stack((norm_1,norm_3,norm_4,cat)))
         X1 = np.append(cat,[norm_1,norm_3,norm_4])
         X = X1.reshape(1,-1)
         # y = np.array(norm_2)
         # y = y.reshape(1,-1)
-        yhat = model.predict(x=X)
+        ytrue = np.append(ytrue, norm_2)
+        y_hat = model.predict(x=X)
+        yhat = np.append(yhat, y_hat[0][0])
 
         with open("Testing.txt",'a') as f:
             f.write(f"yhat {i} : {yhat} \n")
         i = i+1
+
+
+def r_squared(y, y_hat):
+    y_bar = y.mean()
+    ss_tot = ((y-y_bar)**2).sum()
+    ss_res = ((y-y_hat)**2).sum()
+    return 1 - (ss_res/ss_tot)
+
+r_squared(ytrue,yhat)
 
 
 
